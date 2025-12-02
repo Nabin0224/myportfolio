@@ -24,7 +24,7 @@ const Home = () => {
           clearInterval(fastInterval!);
           timeout1 = setTimeout(loadMedium, 500);
         }
-      }, 20);
+      }, 15);
     };
     const loadMedium = () => {
       let current = 40;
@@ -35,7 +35,7 @@ const Home = () => {
           clearInterval(mediumInterval!);
           timeout2 = setTimeout(loadSlow, 800);
         }
-      }, 60);
+      }, 40);
     };
 
     const loadSlow = () => {
@@ -48,7 +48,7 @@ const Home = () => {
           setShowContent(true);
           return 100;
         }
-      }, 100);
+      }, 80);
     };
 
     loadFast();
