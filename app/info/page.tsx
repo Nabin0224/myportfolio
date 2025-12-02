@@ -42,8 +42,8 @@ const Info = () => {
               <li>MongoDB</li>
             </ul>
            </div>
-          <div className="portfolioImg md:mt-28">
-          <img src={myimg.src} alt="" />
+          <div className="portfolioImg mt-16 md:mt-28">
+          <img src={myimg.src} alt="" className='h-64 md:h-auto' />
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <main className="mx-2 md:mx-10 mt-12">
+    <main className="mx-2 md:mx-10 mt-0 md:mt-12">
       <div className="desktop md:block hidden">
         <div className=" md:flex w-screen md:gap-18 overflow-hidden h-[300px] md:h-[330px] text-[200px] md:text-[340px] md:mt-4 text-[#777777]">
           <span className="flex items-center justify-center font-bebas-serif space-x-0 -tracking-[0.05em] h-[30%] md:h-auto">
@@ -120,7 +120,7 @@ const Hero = () => {
 
       {/* mobile view  */}
 
-      <div className="mobile block md:hidden mt-6">
+      <div className="mobile block md:hidden mt-2">
         <div className="">
           <motion.div
             initial={{ y: 700 }}
@@ -129,26 +129,26 @@ const Hero = () => {
           >
             <div className="flex flex-col md:flex-row md:gap-18  text-[#777777]">
               {/* FRONT */}
-              <span className="font-bebas-serif text-[180px] sm:text-[220px] leading-none -tracking-[0.05em]">
-                FRONT
+              <span className="font-bebas-serif text-[161px] sm:text-[220px] leading-none -tracking-[0.05em]">
+                FULL
               </span>
 
               {/* DASH + END (vertical on mobile, horizontal on desktop) */}
-              <div className="flex gap-2px-2">
+              <div className="flex gap-1 px-2">
                 {/* Dash */}
                 <div className="flex items-center justify-center">
-                  <span className="block w-[190px] md:w-[300px] h-[18px] bg-[#777777] mb-4 md:mb-0 md:mr-4"></span>
+                  <span className="block w-[90px] md:w-[300px] h-[18px] bg-[#777777] mb-4 md:mb-0 md:mr-4"></span>
                 </div>
 
                 {/* END */}
-                <span className="font-bebas-serif text-[180px] sm:text-[220px] md:text-[340px] leading-none text-hover-tracking-[0.05em]">
-                  END
+                <span className="font-bebas-serif text-[161px] sm:text-[220px] md:text-[340px] leading-none text-hover-tracking-[0.05em]">
+                  STACK
                 </span>
               </div>
             </div>
 
             {/* DEVELOPER */}
-            <span className="flex flex-col font-bebas-serif text-[180px] sm:text-[220px] text-[#777777] leading-none -tracking-[0.05em]">
+            <span className="flex flex-col font-bebas-serif text-[161px] sm:text-[220px] text-[#777777] leading-none -tracking-[0.05em]">
               <span className="">DEVELOP</span>
               <span>ER</span>
               <div></div>

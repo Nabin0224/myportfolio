@@ -26,7 +26,7 @@ const Work = () => {
   return (
     <div>
       <Navbar />
-      <div className="heading flex md:flex-row gap-2 md:gap-0 flex-col-reverse my-4 md:my-6 p-2 mx-1 md:mx-6 justify-between">
+      <div className="heading flex md:flex-row gap-2 md:gap-0 flex-col-reverse my-4 md:my-6 p-2 mx-1 md:mx-6 justify-between mb-14 mt-8">
         <div className="flex justify-end md:justify-start text-[14px] text-neon mt-2 md:w-[30%]">
           <p className="w-[85%] text-[#cccfca] leading-4.5">
             Helping bold, innovative brands succeed through strategic,
@@ -39,20 +39,20 @@ const Work = () => {
         </div>
       </div>
       <Separator />
-      <div className="skills flex flex-col flex-1 mx-2 md:mx-6 my-4 md:my-0 p-1 md:p-0 ">
+      <div className="skills flex flex-col flex-1 mx-2 md:mx-6 my-4 md:my-0 p-1 md:p-0">
         {skills &&
           skills.map((skill, index) => (
             <HoverTooltip text={text} key={index}>
               <div className="" key={index}>
                 <div
-                  className="flex flex-col md:flex-row  md:justify-between md:items-center items-start"
+                  className="flex flex-row justify-between items-center"
                   onClick={() => handleShow(index)}
                 >
-                  <div className="flex md:flex-row flex-col gap-8 my-7 w-max">
-                    <h2 className="text-3xl md:text-6xl font-source-serif text-neon ">
+                  <div className="flex flex-row gap-4 md:gap-8 my-7 w-max">
+                    <h2 className="text-2xl md:text-6xl font-source-serif text-neon ">
                       {skill.title}
                     </h2>
-                    <div className="flex flex-col font-helvetica text-xs md:text-sm justify-center items-center text-neon text-[#cccfca]">
+                    <div className="flex flex-col font-helvetica text-[10px] md:text-sm justify-center items-center text-neon text-[#cccfca]">
                       <p>{skill.level}</p>
                       <p>{skill.started}</p>
                     </div>
@@ -106,14 +106,14 @@ const Work = () => {
           ))}
       </div>
 
-      <section className="">
-        <div className="section-wrapper w-[50%] mt-52 m-auto">
+      <section className="collaboration">
+        <div className="section-wrapper w-[80%] md:w-[50%] mt-36 md:mt-52  m-auto">
           <div className="buttons flex justify-center items-center gap-2">
             <ResourceButton value="Lets" className="py-4 text-5xl" />
             <ResourceButton value="Talk" className="py-4 text-5xl" />
           </div>
-          <div className="text-center font-sans text-4xl md:text-[52px] text-neon mt-10 leading-15">
-            <p className="text-center">
+          <div className="text-center font-sans text-2xl md:text-[52px] text-neon mt-10 md:leading-15">
+            <p className="">
               To talk collaborations or partnerships, send an email to
               <span
                 className="relative inline-block group cursor-pointer"
