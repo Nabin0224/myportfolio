@@ -120,7 +120,7 @@ const Hero = () => {
 
       {/* mobile view  */}
 
-      <div className="mobile block md:hidden mt-2">
+      <div className="mobile block md:hidden mt-14 overflow-hidden">
         <div className="">
           <motion.div
             initial={{ y: 700 }}
@@ -129,7 +129,7 @@ const Hero = () => {
           >
             <div className="flex flex-col md:flex-row md:gap-18  text-[#777777]">
               {/* FRONT */}
-              <span className="font-bebas-serif text-[161px] sm:text-[220px] leading-none -tracking-[0.05em]">
+              <span className="font-bebas-serif text-[165px] leading-none -tracking-[0.05em]">
                 FULL
               </span>
 
@@ -141,14 +141,14 @@ const Hero = () => {
                 </div>
 
                 {/* END */}
-                <span className="font-bebas-serif text-[161px] sm:text-[220px] md:text-[340px] leading-none text-hover-tracking-[0.05em]">
+                <span className="font-bebas-serif text-[165px]  leading-none text-hover-tracking-[0.05em]">
                   STACK
                 </span>
               </div>
             </div>
 
             {/* DEVELOPER */}
-            <span className="flex flex-col font-bebas-serif text-[161px] sm:text-[220px] text-[#777777] leading-none -tracking-[0.05em]">
+            <span className="flex flex-col font-bebas-serif text-[165px] text-[#777777] leading-none -tracking-[0.05em]">
               <span className="">DEVELOP</span>
               <span>ER</span>
               <div></div>

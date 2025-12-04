@@ -7,7 +7,7 @@ import React from "react";
 
 const FrontPage = () => {
   return (
-    <div className="frontend overflow-hidden h-screen">
+    <div className="frontend overflow-hidden h-[100vdh] md:h-screen">
       <Navbar />
       <Hero />
     </div>
