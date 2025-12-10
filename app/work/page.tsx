@@ -1,7 +1,7 @@
 "use client";
 import Navbar from "@/components/ui/front/Navbar";
 import Separator from "@/components/ui/Separator";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { skills } from "@/components/ui/data/skills";
 import PrimaryButton from "@/components/ui/PrimaryButton";
 import HoverTooltip from "@/components/ui/HoverTooltip";
@@ -13,13 +13,25 @@ import Footer from "@/components/ui/front/Footer";
 import playAudio from "../lib/playAudio";
 
 const Work = () => {
+  console.log("Work component is running");
   const [openIndex, setOpenIndex] = useState(null);
   const [text, setText] = useState("Expand")
 
   function handleShow(index: any) {
-    setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
-    setText((prev) => prev = "collapse")
+    setOpenIndex((prevIndex) => {
+      const newIndex = prevIndex === index ? null : index;
+      setText(newIndex === null ? "Expand" : "Collapse");
+      return newIndex;
+    });
   }
+
+
+  
+  console.log("index", openIndex);
+  console.log("text", text);
+
+
+
 
   
 

@@ -108,7 +108,7 @@ const Hero = () => {
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.8 }}
             >
               <p className="leading-6 font-open-sans text-[17px]">
-                I am a <span className="text-muted">Developer</span> based in Kathmandu, Nepal , Focues
+                I am a <span className="text-muted">Developer</span> based in Kathmandu, Nepal , Focuses
                 on created Modern Websites. Having experience of more than 2
                 years, I have worked with multiple projects including
                 e-commerce, startups.

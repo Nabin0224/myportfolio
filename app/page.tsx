@@ -8,6 +8,7 @@ const Home = () => {
   const [loadingValue, setLoadingValue] = useState<number>(0);
   const [showContent, setShowContent] = useState<boolean>(false);
 
+
   useEffect(() => {
     let fastInterval: NodeJS.Timeout | null = null;
     let mediumInterval: NodeJS.Timeout | null = null;
