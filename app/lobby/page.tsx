@@ -1,4 +1,4 @@
-
+"use client"
 import Footer from "@/components/ui/front/Footer";
 import Hero from "@/components/ui/front/Hero";
 import Navbar from "@/components/ui/front/Navbar";
